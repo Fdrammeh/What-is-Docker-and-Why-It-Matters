@@ -1,0 +1,11 @@
+
+Write down the answers to these questions:
+
+What happens when you docker run the same image twice?
+Answer:  When you run docker run on the same image twice, Docker creates two separate containers from that image. Docker uses the same image and creates a new container each time. Each container gets its own container ID and name.
+
+What happens to files created inside a container when it stops? 
+Answer: When a container stops, the files created inside it usually remain.
+
+How is the -p flag used to map ports?
+The -p flag maps a port on the host machine to a port inside the container. If I typed docker run -p 8000:8000 my-fastapi maps port 8000 on my Mac to port 8000 inside the container.
